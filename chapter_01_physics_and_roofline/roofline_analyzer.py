@@ -3,17 +3,24 @@ Roofline Model and Arithmetic Intensity Analyzer
 Calculates theoretical hardware ceilings, operational intensity ridge points,
 and Model Flops Utilization (MFU) across modern accelerator architectures.
 """
-from typing import Dict
+from typing import Dict, Any
 
 def analyze_roofline(
     hardware_name: str,
     peak_tflops: float,
     memory_bandwidth_tbps: float,
     operational_intensity: float
-) -> Dict[str, float]:
+) -> Dict[str, Any]:
     """
     Computes attainable performance and hardware balance metrics under the Roofline model.
     """
+    if peak_tflops <= 0:
+        raise ValueError("peak_tflops must be greater than zero.")
+    if memory_bandwidth_tbps <= 0:
+        raise ValueError("memory_bandwidth_tbps must be greater than zero.")
+    if operational_intensity < 0:
+        raise ValueError("operational_intensity cannot be negative.")
+
     ridge_point = peak_tflops / memory_bandwidth_tbps
     bandwidth_bound_tflops = operational_intensity * memory_bandwidth_tbps
     attainable_tflops = min(peak_tflops, bandwidth_bound_tflops)
@@ -31,8 +38,13 @@ def classify_inference_regime(
     peak_tflops: float,
     attainable_tflops: float,
     is_memory_bound: bool
-) -> Dict[str, any]:
+) -> Dict[str, Any]:
     """Classifies execution regime into Memory-Bound (GEMV) vs Compute-Bound (GEMM)."""
+    if peak_tflops <= 0:
+        raise ValueError("peak_tflops must be greater than zero.")
+    if attainable_tflops < 0:
+        raise ValueError("attainable_tflops cannot be negative.")
+
     mfu_percent = (attainable_tflops / peak_tflops) * 100.0
     regime = "Memory-Bandwidth Bound (GEMV decode)" if is_memory_bound else "Compute Bound (GEMM prefill)"
     return {
