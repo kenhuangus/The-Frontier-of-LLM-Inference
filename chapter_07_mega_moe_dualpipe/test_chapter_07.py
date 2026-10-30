@@ -1,6 +1,6 @@
 """
 Unit Test Suite for Chapter 7: Serving Mega-MoE at Scale (DeepSeek DualPipe & Expert Parallelism)
-The Frontier of LLM Inference (2026 Edition)
+The Frontier of LLM Inference
 
 Validates:
 1. DeepSeek DualPipe Bidirectional 1F1B Schedule:

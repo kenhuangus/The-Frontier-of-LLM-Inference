@@ -1,6 +1,6 @@
 """
 Unit Test Suite for Chapter 3: Next-Gen Speculative Decoding
-The Frontier of LLM Inference (2026 Edition)
+The Frontier of LLM Inference
 
 Validates:
 1. SpeculativeRejectionSampler (Leviathan-Chen Invariance):

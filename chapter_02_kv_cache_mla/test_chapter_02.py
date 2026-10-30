@@ -1,6 +1,6 @@
 """
 Unit Test Suite for Chapter 2: KV Cache Optimization & Multi-Head Latent Attention (MLA)
-The Frontier of LLM Inference (2026 Edition)
+The Frontier of LLM Inference
 
 Validates:
 1. RadixAttention Prefix Caching Engine:

@@ -1,4 +1,4 @@
-# The Frontier of LLM Inference (2026 Edition)
+# The Frontier of LLM Inference
 ## Exclusive Companion Repository for Book Readers
 
 **Authors:**
@@ -9,7 +9,7 @@
 
 ## About the Book
 
-***The Frontier of LLM Inference: The Physics and Engineering of Frontier LLM Inference (2026 Edition)*** provides a rigorous, first-principles examination of high-throughput, low-latency AI serving systems. 
+***The Frontier of LLM Inference: The Physics and Engineering of Frontier LLM Inference*** provides a rigorous, first-principles examination of high-throughput, low-latency AI serving systems. 
 
 Moving beyond high-level abstractions, the book covers the physical and architectural constraints governing modern LLM serving infrastructure:
 * **The Physics of LLM Inference & Roofline Models:** Hardware limits, arithmetic intensity collapse during decode, and compute-vs-memory bound transitions across NVIDIA Hopper (H100) and Blackwell (B200) architectures.

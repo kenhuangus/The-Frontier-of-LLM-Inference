@@ -1,6 +1,6 @@
 """
 Unit Test Suite for Chapter 5: Hardware-Aware Attention Kernels
-Book: The Frontier of LLM Inference (2026 Edition)
+Book: The Frontier of LLM Inference
 
 Validates:
 1. flashattention3_pipeline.py:

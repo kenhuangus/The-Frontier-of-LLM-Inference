@@ -1,6 +1,6 @@
 """
 Unit Test Suite for Chapter 6: Disaggregated Serving Architectures (DistServe, Mooncake, vLLM V1)
-The Frontier of LLM Inference (2026 Edition)
+The Frontier of LLM Inference
 
 Validates:
 1. Mooncake 4-Tier RDMA KV Cache Transfer Engine:

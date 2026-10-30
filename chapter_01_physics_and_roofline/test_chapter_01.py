@@ -1,6 +1,6 @@
 """
 Unit Test Suite for Chapter 1: Physics and Roofline Model of LLM Inference
-The Frontier of LLM Inference (2026 Edition)
+The Frontier of LLM Inference
 
 Validates:
 1. KV Cache Sizing & Capacity Calculator (MHA, GQA, MQA, MLA, fleet cluster sizing)

@@ -1,6 +1,6 @@
 """
 Unit Test Suite for Chapter 4: Extreme Quantization and Precision (FP4 / FP8 / KIVI)
-Book: The Frontier of LLM Inference (2026 Edition)
+Book: The Frontier of LLM Inference
 
 Validates:
 1. mxfp4_microscaling.py:

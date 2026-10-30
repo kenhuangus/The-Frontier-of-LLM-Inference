@@ -1,6 +1,6 @@
 """
 Comprehensive Unit Test Suite for Chapter 12: Agentic Inference Systems
-The Frontier of LLM Inference (2026 Edition)
+The Frontier of LLM Inference
 
 Covers:
   - session_native_kv.py:

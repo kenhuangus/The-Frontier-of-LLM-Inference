@@ -1,6 +1,6 @@
 """
 Unit Test Suite for Chapter 9: Ultra-Long Context Mastery (Dual-Chunk Attention & YaRN RoPE Scaling)
-The Frontier of LLM Inference (2026 Edition)
+The Frontier of LLM Inference
 
 Validates:
 1. Dual-Chunk Attention (DCA):
